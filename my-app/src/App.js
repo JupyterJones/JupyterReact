@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-           Game of Thrones Data on JahRal. 
+           Game of Thrones Data for JahRal. 
         </p>
         <p>  Game of Thrones Winter is Coming
         </p>
