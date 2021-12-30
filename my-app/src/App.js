@@ -8,23 +8,23 @@ const App = () => {
 	const [notes, setNotes] = useState([
 		{
 			id: nanoid(),
-			text: 'This is my first note!',
-			date: '15/04/2021',
+			text: 'A nice place to save notes and links',
+			date: '30/12/2021',
 		},
 		{
 			id: nanoid(),
-			text: 'This is my second note!',
-			date: '21/04/2021',
+			text: 'I am working on fixing it to save hot url links.',
+			date: '30/12/2021',
 		},
 		{
 			id: nanoid(),
-			text: 'This is my third note!',
-			date: '28/04/2021',
+			text: 'The notes are saved in HTML Web Storage',
+			date: '30/12/2021',
 		},
 		{
 			id: nanoid(),
-			text: 'This is my new note!',
-			date: '30/04/2021',
+			text: 'The Notes are saved in a json formate and are searchable and deletable',
+			date: '30/12/2021',
 		},
 	]);
 
