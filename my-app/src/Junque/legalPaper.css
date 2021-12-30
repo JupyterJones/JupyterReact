@@ -1,0 +1,42 @@
+
+/* styling paper */
+.paper {
+    width: 50%;
+    height: 600px;
+    position: relative;
+    margin: 20px auto;
+    padding-top: 40px;
+    padding-bottom: 0;
+    background-color: rgb(87, 49, 19);
+    box-shadow: -7px 10px 12px 0px rgba(107,105,107,1);
+  }
+  
+  /* styling red vertical line */
+  .paper::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: rgba(255,0,0,0.6);
+  }
+  
+  /* styling blue horizontal lines */
+  .pattern {
+    height: 100%;
+    background-image: repeating-linear-gradient(rgb(241, 227, 160) 0px, rgb(241, 227, 160) 24px, teal 25px);
+  }
+  
+  /* styling text content */
+  .content {
+    padding-top: 6px;
+    padding-left: 56px;
+    padding-right: 16px;
+    line-height: 25px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 19px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+      

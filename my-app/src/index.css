@@ -1,16 +1,211 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
 }
-p {white-space: pre-wrap;
+
+.header {
+	display: flex;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(95, 110, 5);
 }
+
+.dark-mode {
+	background-color: black;
+}
+
+.dark-mode h1 {
+	color: rgb(174, 248, 151);
+}
+
+
+.dark-mode .container {
+	background-color: rgb(40, 71, 10);	
+}
+
+.container {
+	background-color: rgb(146, 196, 96);
+	width: 1200px;
+	min-width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	min-height: 100vh;
+	border-color: 1em rgb(12, 58, 156);
+}
+
+/*.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}*/
+.notes-list{
+	background-color: brown;
+	width: 1150px;
+	min-width: 75%;
+}
+
+.note.new {
+	margin: 2px auto;
+	background-color: #18a00b;
+	border: 1px solid rgb(12, 102, 12);
+}
+
+textarea {
+	width:auto;
+	border: none;
+	resize: none;
+	/*background-color: #67d7cc;*/
+    background-color: #ecaa5e;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #c7bebe;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
+
+.note {
+	margin-right: 2%;
+	margin-left: 2%;
+	width: 96%;
+	background-color: #a89f19;
+	border-radius: 10px;
+	padding: 1%;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note-footer {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1em;
+	width: 96%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	float:right;
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
+
+/* styling paper */
+.paper {
+	border: 1px solid rgb(0, 0, 0); 
+    width: 100%;
+    height: auto;
+	/*margin-left: 3em;*/
+    position: relative;
+    margin: 0px auto;
+    /*padding-top: 40px;*/
+    padding-bottom: 0;
+    /*background-color: rgb(43, 42, 30);*/
+	background-color: rgb(182, 55, 23);
+    box-shadow: -6px 6px 12px 1px rgba(0,0,0,0.75);
+
+  }
+  
+  /* styling red vertical line */
+  .pattern::before {
+    content: '';
+    width: 2px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: rgba(194, 0, 0, 0.6);
+  }
+  
+  /* styling blue horizontal lines */
+  .pattern {
+    height: auto;
+	width: 100%;
+	/*margin-left: 1%;*/
+    background-image: repeating-linear-gradient(rgb(241, 227, 160) 0px, rgb(241, 227, 160) 24px, teal 25px);
+  }
+  
+  /* styling text content */
+  .content {
+	background-color: blue;
+    margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 20x;
+    padding-right: 20x;
+    line-height: 25px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 19px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+
+ .dark-mode .pattern {
+    height: 100%;
+	width: 98%;
+	margin-left: 1%;
+    background-image: repeating-linear-gradient(rgb(170, 154, 74) 0px, rgb(177, 157, 61) 24px, rgb(128, 0, 17) 25px);
+  }
+
+/*
+  .dark-mode .pattern {
+	background-color: rgb(171, 173, 43);	
+}
+  
+.dark-mod .search input {
+	border: none;
+	background-color: rgb(145, 136, 136);
+	width: 100%;
+}    */
+

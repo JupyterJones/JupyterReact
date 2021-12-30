@@ -1,0 +1,2 @@
+grep -lr "common" $(grep -lr "rare" .)
+grep -rnw -e 'shadow'
